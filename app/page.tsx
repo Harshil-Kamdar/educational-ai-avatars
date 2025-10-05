@@ -1,10 +1,20 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
-      <h1 className="font-cursive text-6xl md:text-8xl mb-16 text-foreground">CharacTutor</h1>
+      <div className="mb-16">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CuoFss4QwAa6tmNEE6GySSdF5UMjlJ.png"
+          alt="CharacTutor"
+          width={400}
+          height={100}
+          className="w-auto h-20 md:h-24"
+          priority
+        />
+      </div>
 
       <div className="flex flex-col gap-4 w-full max-w-md">
         <Link href="/elementary" className="w-full">
